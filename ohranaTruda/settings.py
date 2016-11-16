@@ -134,3 +134,10 @@ STATICFILES_DIRS = [
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Email
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'verkhoshintsev@gmail.com'
+EMAIL_HOST_PASSWORD = '31Cjn01Cfqp89'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
