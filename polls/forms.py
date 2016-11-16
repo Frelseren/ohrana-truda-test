@@ -1,9 +1,11 @@
 from django import forms
+from .models import Question
 
 class PostForm(forms.Form):
     # for i in range(1,201):
     #   globals()['question{0}'.format(i)] = forms.IntegerField(required=False)
-
+    for field in range(len(Question.objects.values())):
+        print(field)
     # All fields are optional in case if there are more fields than in the view
     question1 = forms.IntegerField(required=False)
     question2 = forms.IntegerField(required=False)

@@ -13,7 +13,7 @@ from .models import Question
 
 @login_required
 def index(request):
-    latest_question_list = Question.objects.all()
+    latest_question_list = Question.objects.order_by('question_text').all()
     if request.method == 'GET':
         form = PostForm
     else:
