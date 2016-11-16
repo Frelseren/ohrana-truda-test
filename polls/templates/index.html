@@ -29,7 +29,7 @@
                     {{ question.answer3_text }}
                 </label>
             </div>
-            {% if answer4_text != 'null' %}
+            {% if question.answer4_text != 'null' %}
             <div class="radio">
                 <label>
                     <input type="radio" name="question{{ question.id }}" value="4">
