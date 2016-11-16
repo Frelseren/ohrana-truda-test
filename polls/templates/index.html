@@ -29,6 +29,12 @@
                     {{ question.answer3_text }}
                 </label>
             </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="question{{ question.id }}" value="4">
+                    {{ question.answer4_text }}
+                </label>
+            </div>
         </div>
         {% endfor %}
         <p class="text-right">

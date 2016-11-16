@@ -1,8 +1,7 @@
-from django.http import Http404
-from django.shortcuts import get_object_or_404, render, redirect
-from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
 from polls.forms import PostForm
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 
 from django.core.mail import send_mail, BadHeaderError
