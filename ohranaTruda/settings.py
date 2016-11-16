@@ -79,16 +79,17 @@ WSGI_APPLICATION = 'ohranaTruda.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd7vaq93qlro3e7',
-        'USER': 'nydgjwmngtqmdv',
-        'PASSWORD': 'xpy4WPnGJiOBf_U9VCFdX8BuZc',
-        'HOST': 'ec2-54-243-48-178.compute-1.amazonaws.com',
-        'PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'd7vaq93qlro3e7',
+#         'USER': 'nydgjwmngtqmdv',
+#         'PASSWORD': 'xpy4WPnGJiOBf_U9VCFdX8BuZc',
+#         'HOST': 'ec2-54-243-48-178.compute-1.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
+DATABASES['default'] =  dj_database_url.config()
 
 AUTH_PASSWORD_VALIDATORS = [
     {
