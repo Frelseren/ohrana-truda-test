@@ -141,8 +141,8 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Email
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'verkhoshintsev@gmail.com'
+EMAIL_HOST = 'smtp.zoho.com'
+EMAIL_HOST_USER = 'nikita@digitalflask.com'
 EMAIL_HOST_PASSWORD = '31Cjn01Cfqp89'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
