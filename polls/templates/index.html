@@ -29,12 +29,14 @@
                     {{ question.answer3_text }}
                 </label>
             </div>
+            {% if answer4_text != '–' %}
             <div class="radio">
                 <label>
                     <input type="radio" name="question{{ question.id }}" value="4">
                     {{ question.answer4_text }}
                 </label>
             </div>
+            {% endif %}
         </div>
         {% endfor %}
         <p class="text-right">
