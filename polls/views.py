@@ -22,9 +22,9 @@ def index(request):
             count = 0
             questions = Question.objects.values()
 
-            for i in range(1,3):
-                answer = form.cleaned_data['question%s' % i]
-                correct = questions[i-1]['correct']
+            for i in range(len(questions)):
+                answer = form.cleaned_data['question{0}'.format((i+1))]
+                correct = questions[i]['correct']
                 if answer == correct:
                     count += 1
             
