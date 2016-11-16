@@ -81,8 +81,12 @@ WSGI_APPLICATION = 'ohranaTruda.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd7vaq93qlro3e7',
+        'USER': 'nydgjwmngtqmdv',
+        'PASSWORD': 'xpy4WPnGJiOBf_U9VCFdX8BuZc',
+        'HOST': 'ec2-54-243-48-178.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
